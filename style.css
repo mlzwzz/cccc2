@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(194, 184, 184);
+}
+.all {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+}
+li {
+    list-style: none;
+    width: 800px;
+    height: 100px;
+background-image: url(china-red.jpg);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.header {
+    border-radius: 20px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    border: solid 1px darkgray;
+}
+.bottom {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 6px;
+}
+.introduction {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+#text {
+    height: 40px;
+    background-color: pink;
+    width: 100%;
+    border-radius: 20px;
+    padding-bottom: 0;
+}
