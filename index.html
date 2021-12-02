@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 这是整个页面 -->
+    <div class="all">
+        <!-- 这是头部 -->
+        <div class="header">
+            <div class="introduction"></div>
+            <div class="text">
+                <textarea name="" id="text" cols="120" rows="3"></textarea>
+            </div>
+        </div>
+        <!-- 这是主体部分 -->
+        <ul class="body">
+            <li></li>
+        </ul>
+        <!-- 这里是底部部分 -->
+        <div class="bottom">
+            <button class="button"></button>
+        </div>
+    </div>
+    <script>
+        var btn = document.querySelector('button');
+        var ul = document.querySelector('ul');
+        var text = document.querySelector('textarea')
+        btn.onclick = function () {
+            if (text.value =='') {
+                alert('没有打字就想占地方?')
+            } else {
+                var li = document.createElement('li')
+                li.innerHTML = text.value;
+                ul.appendChild(li);
+            }
+
+        }
+    </script>
+</body>
+</html>
